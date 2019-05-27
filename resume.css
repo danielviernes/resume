@@ -38,7 +38,7 @@ p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 a { color: #990003 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
-li { line-height: 24px; border-bottom: 1px solid #ccc; }
+li { line-height: 24px; border-bottom: 1px solid rgb(121, 121, 121); }
 p.enlarge { font-size: 122%; padding-right: 6.5em; line-height: 24px; }
 p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; }
@@ -57,11 +57,24 @@ a#pdf:hover { background: #222; }
 .education{padding-bottom: 20px;}
 
 .last { border: none; }
-.skills-list {  }
 .skills-list ul { margin: 0; }
 .skills-list li { margin: 3px 0; padding: 3px 0; }
 .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
-.project { width: 32%; float: left; margin-right: 5px;}
+
+.yui-u.projects{ display: flex; }
+.col { width: 49%; height: 100%; display: inline-block; flex: 1; margin-right: 30px; }
+.project { width: 100%; float: left; padding: 10px; border-radius: 5%;}
+.project.odd { background-color: rgb(199, 199, 199); }
+.project ul { margin-top: 10px;}
+.project li { float: left; width: 100%; display: flex; }
+.project li i { display: inline-block; width: 85%; flex: 1; margin-right: 0px;}
+.project .project-label { 
+    font-weight: 600; 
+    flex: 1;
+    display: inline-block;
+    width: 15%;
+    clear:left;
+}
 .skills { width: 25%; float: left }
 .project h2 { margin-bottom: 6px; }
 .skills li {font-size: 18px;}
@@ -75,7 +88,10 @@ i{margin-right: 7px;}
 .yui-gf div.first{width:12.3%;}
 
 .contact{margin: 8px 0 0;}
-.contact a{text-decoration: none;}
 
-.long{font-size: 15px;}
-.with-month{font-size: 14px}
+@media print {
+    .project.odd { 
+        background-color: rgb(199, 199, 199) !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
