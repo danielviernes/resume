@@ -38,7 +38,7 @@ p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 a { color: #990003 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
-li { line-height: 24px; border-bottom: 1px solid rgb(121, 121, 121); }
+.project ul li, ul.skills li { line-height: 24px; border-bottom: 1px solid rgb(121, 121, 121); }
 p.enlarge { font-size: 122%; padding-right: 6.5em; line-height: 24px; }
 p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; }
@@ -54,9 +54,10 @@ a#pdf:hover { background: #222; }
 .job, .education { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .job h4, .education h4 { position: absolute; top: 0.35em; right: 0 }
 .job p, .education p { margin: 0.75em 0; }
+div.job>ul.description li { list-style: circle; margin-left: 12px;}
 .education{padding-bottom: 20px;}
 
-.last { border: none; }
+.last { border: none !important; }
 .skills-list ul { margin: 0; }
 .skills-list li { margin: 3px 0; padding: 3px 0; }
 .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
