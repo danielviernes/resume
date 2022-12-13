@@ -56,6 +56,7 @@ a#pdf:hover { background: #222; }
 .job p, .education p { margin: 0.75em 0; }
 div.job>ul.description li { list-style: circle; margin-left: 12px;}
 .education{padding-bottom: 20px;}
+.education-section{padding-top: 20px;}
 
 .last { border: none !important; }
 .skills-list ul { margin: 0; }
